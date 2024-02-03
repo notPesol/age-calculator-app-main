@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="body-wrapper">
+        <div class="input-wrapper">
+          <div class="input-box">
+            <div id="dayLabel" class="label">DAY</div>
+            <input placeholder="DD" class="input" type="text" id="day" />
+            <span id="daySpan" class="span">Must be a valid day</span>
+          </div>
+          <div class="input-box">
+            <div id="monthLabel" class="label">Month</div>
+            <input placeholder="MM" class="input" type="text" id="month" />
+            <span id="monthSpan" class="span">Must be a valid month</span>
+          </div>
+          <div class="input-box">
+            <div id="yearLabel" class="label">Year</div>
+            <input placeholder="YYYY" class="input" type="text" id="year" />
+            <span id="yearSpan" class="span">Must be a valid year</span>
+          </div>
+        </div>
+        <div class="btn-wrapper">
+          <div class="line"></div>
+          <div class="img-wrapper" id="btn">
+            <img src="./assets/images/icon-arrow.svg" alt="" />
+          </div>
+        </div>
+        <div class="result-wrapper">
+          <div class="result">
+            <div class="number" id="rYear">--</div>
+            <div class="text">years</div>
+          </div>
+          <div class="result">
+            <div class="number" id="rMonth">--</div>
+            <div class="text">months</div>
+          </div>
+          <div class="result">
+            <div class="number" id="rDay">--</div>
+            <div class="text">days</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/notPesol" target="_blank">notPesol</a>.
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
